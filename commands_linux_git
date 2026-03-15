@@ -1,0 +1,144 @@
+=============================
+LINUX / UBUNTU
+=============================
+
+# aktualizacja pakietów
+sudo apt update
+
+# instalacja pakietów
+sudo apt install wget gpg
+
+# instalacja programu z repozytorium
+sudo apt install code
+
+# pobranie pliku z internetu
+wget URL
+
+# instalacja programu z pliku .deb
+sudo dpkg -i nazwa_pliku.deb
+
+# instalacja jeśli są brakujące zależności
+sudo apt -f install
+
+# instalacja przez snap
+sudo snap install code --classic
+
+# usunięcie snap
+sudo snap remove code
+
+# lista zainstalowanych snapów
+snap list
+
+# sprawdzenie plików w katalogu
+ls
+
+# przejście do katalogu
+cd folder
+
+# przykład przejścia do Downloads
+cd ~/Downloads
+
+# sprawdzenie wersji programu
+program --version
+
+# przykłady
+git --version
+code --version
+
+
+=============================
+PYTHON / PROJEKT
+=============================
+
+# utworzenie virtual environment
+python -m venv venv
+
+# aktywacja venv (Linux / Ubuntu)
+source venv/bin/activate
+
+# aktywacja venv (Windows)
+venv\Scripts\activate
+
+# zapisanie bibliotek projektu
+pip freeze > requirements.txt
+
+# instalacja bibliotek z pliku
+pip install -r requirements.txt
+
+
+=============================
+GIT
+=============================
+
+# inicjalizacja repozytorium
+git init
+
+# dodanie wszystkich plików
+git add .
+
+# dodanie pojedynczego pliku
+git add README.md
+
+# commit zmian
+git commit -m "opis zmiany"
+
+# przykład
+git commit -m "first commit"
+
+# konfiguracja autora commitów
+git config --global user.name "Twoja nazwa"
+git config --global user.email "twoj@email.com"
+
+# sprawdzenie konfiguracji
+git config --list
+
+# historia commitów
+git log
+
+
+=============================
+GITHUB
+=============================
+
+# dodanie zdalnego repozytorium
+git remote add origin URL_REPO
+
+# zmiana gałęzi na main
+git branch -M main
+
+# wysłanie kodu na GitHub
+git push -u origin main
+
+# pobranie repozytorium z GitHub
+git clone URL_REPO
+
+# pobranie najnowszych zmian
+git pull
+
+
+=============================
+VS CODE
+=============================
+
+# uruchomienie VS Code
+code
+
+# otwarcie folderu w VS Code
+code .
+
+
+=============================
+PODSTAWOWY WORKFLOW
+=============================
+
+# gdy zmienisz kod
+git add .
+git commit -m "opis zmiany"
+git push
+
+# gdy zaczynasz pracę na innym komputerze
+git clone URL
+cd projekt
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
